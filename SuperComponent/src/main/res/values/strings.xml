@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SuperNotepad</string>
+
+    <string name="setting">Setting</string>
+    <string name="loading">Loading</string>
+    <string name="waiting">Waiting</string>
+</resources>

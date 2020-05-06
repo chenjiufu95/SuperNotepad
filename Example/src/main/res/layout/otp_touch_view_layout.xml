@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otp_touch_view_root"
+    android:layout_width="@dimen/grid_width"
+    android:layout_height="@dimen/grid_height"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:background="@drawable/my_corner05_border_touch_up">
+    <TextView
+        android:id="@+id/otp_touch_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="名称"
+        android:textColor="@color/White"
+        android:textSize="@dimen/title_size"/>
+
+    <TextView
+        android:id="@+id/otp_touch_view_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/otp_touch_view_title"
+        android:text="一"
+        android:textColor="@color/white"
+        android:textSize="@dimen/des_size"/>
+
+    <ImageView
+        android:id="@+id/otp_touch_view_image"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ui4_otp_rgb"/>
+</RelativeLayout>

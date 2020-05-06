@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">超级笔记</string>
+    <string name="confirm">确定</string>
+    <string name="concel">取消</string>
+</resources>

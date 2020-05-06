@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">XPopupView</string>
+    <string name="confirm">确定</string>
+    <string name="input_password">输入密码</string>
+</resources>

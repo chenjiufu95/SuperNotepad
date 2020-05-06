@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_for_my_xpopup"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/radius_for_my_xpopup_card"
+    android:padding="0dp"
+    app:cardBackgroundColor="@color/White"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_my_divider">
+
+        <pers.julio.notepad.xpopup.Component.FocusTextView
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            tools:text="标题"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/Black"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:theme="@style/TextInputLayoutWhite"
+            app:errorEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/input_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                android:textColor="@color/myGrayDark"
+                android:textColorHint="@color/myGrayDark"
+                android:textSize="@dimen/title_size"
+                android:theme="@style/TextInputLayoutWhite" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+            <TextView
+                android:id="@+id/input_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/cancel"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/myGrayDark" />
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/myGrayDark" />
+
+            <TextView
+                android:id="@+id/input_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/confirm"
+                android:textColor="@color/myTextColor"
+                android:textSize="@dimen/title_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+

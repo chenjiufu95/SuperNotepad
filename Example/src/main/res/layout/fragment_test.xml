@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/test_logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="测试界面"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/test_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_corner05_border_gold"/>
+
+    <TextView
+        android:id="@+id/test_add_fragment"
+        style="@style/text_btn_style"
+        android:text="点击测试 AddFragment" />
+    <TextView
+        android:id="@+id/test_replace_fragment"
+        style="@style/text_btn_style"
+        android:layout_marginTop="5dp"
+        android:text="点击测试 ReplaceFragment" />
+    <TextView
+        android:id="@+id/test_show_fragment"
+        style="@style/text_btn_style"
+        android:layout_marginTop="5dp"
+        android:text="点击测试 ShowFragment" />
+    <TextView
+        android:id="@+id/test_hide_fragment"
+        style="@style/text_btn_style"
+        android:layout_marginTop="5dp"
+        android:text="点击测试 HideFragment" />
+</LinearLayout>

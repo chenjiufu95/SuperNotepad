@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutWhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/myGrayLightBg</item>
+        <item name="android:textColorHint">@color/myGrayLightBg</item>
+        <item name="colorControlNormal">@color/Transparent</item>
+        <item name="colorControlActivated">@color/myGrayDark</item>
+        <item name="colorControlHighlight">@color/myGrayDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

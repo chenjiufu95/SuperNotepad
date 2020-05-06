@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_for_my_xpopup">260dp</dimen>
+    <dimen name="radius_for_my_xpopup_card">15dp</dimen>
+
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="des_size">13sp</dimen>
+    <dimen name="help_size">11sp</dimen>
+    <dimen name="btn_text_size">15sp</dimen>
+    <dimen name="item_height">46dp</dimen>
+    <dimen name="icon_padding">10dp</dimen>
+    <dimen name="item_height_little">50dp</dimen>
+
+    <dimen name="padding_bottom_popup">10dp</dimen>
+
+    <dimen name="state_bar_height">24dp</dimen>
+    <dimen name="my_topbar_height">70dp</dimen>   <!--70 = 24 + 46-->
+</resources>

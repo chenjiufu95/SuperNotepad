@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_xingkong">
+    <include layout="@layout/my_topbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f999" />
+
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_tabs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:background="#0fff">
+        <TextView
+            android:id="@+id/tv_tab01"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_tab01_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="组一"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/tv_tab02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_tab02_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="组二"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/tv_tab_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_tab_main_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="主页"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_tab03"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_tab03_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="组三"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/tv_tab04"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_tab04_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="组四"
+            android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

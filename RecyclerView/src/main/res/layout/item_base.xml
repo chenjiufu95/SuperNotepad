@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/base_item_logo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/base_item_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/base_item_logo"
+        android:textColor="@color/myTextColor"
+        android:textSize="@dimen/title_size"
+        tools:text="Key" />
+
+    <TextView
+        android:id="@+id/base_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/base_item_state"
+        android:textColor="@color/myGrayDark"
+        android:textSize="@dimen/des_size"
+        tools:text="Value" />
+
+    <ImageView
+        android:id="@+id/base_item_state"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:src="@drawable/selector_mesh_item" />
+
+</RelativeLayout>

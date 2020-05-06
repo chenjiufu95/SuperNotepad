@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topbar_root"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/state_bar_height"
+    android:layout_height="@dimen/my_topbar_height"
+    android:background="@color/white">
+   <!-- android:elevation="@dimen/my_topbar_elevation">-->
+    <!--android:layout_marginBottom="@dimen/my_topbar_elevation">-->
+
+    <pers.julio.notepad.xpopup.Component.FocusTextView
+        android:id="@+id/topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/topbar_left"
+        android:layout_toLeftOf="@id/topbar_right"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:text="DoHome"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever" />
+
+    <ImageView
+        android:id="@+id/topbar_left"
+        android:layout_width="@dimen/my_topbar_icon_size"
+        android:layout_height="@dimen/my_topbar_icon_size"
+        android:padding="@dimen/my_topbar_icon_padding"
+        android:background="@android:color/transparent"
+        android:src="@drawable/topbar_back_black" />
+
+    <TextView
+        android:id="@+id/topbar_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="test"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/title_size"
+        android:visibility="gone"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/topbar_right"
+        android:layout_width="@dimen/my_topbar_icon_size"
+        android:layout_height="@dimen/my_topbar_icon_size"
+        android:padding="@dimen/my_topbar_icon_padding"
+        android:src="@drawable/topbar_more_white"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/topbar_decoration"
+        style="@style/topbar_decoration"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

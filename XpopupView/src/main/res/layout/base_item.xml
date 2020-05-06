@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height_little"
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/base_item_logo"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        tools:src="@drawable/otp_anim" />
+	
+	<ImageView
+        android:id="@+id/base_item_state"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:clickable="false"
+        android:padding="5dp"
+        android:src="@drawable/selector_mesh_item" />
+
+    <TextView
+        android:id="@+id/base_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/base_item_logo"
+        android:textColor="@color/myTextColor"
+        android:textSize="@dimen/title_size"
+        tools:text="Text" />
+
+    <TextView
+        android:id="@+id/base_item_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/base_item_text"
+        android:textColor="@color/myTextColor"
+        android:textSize="@dimen/title_size"
+        tools:text="Key" />
+
+    <TextView
+        android:id="@+id/base_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/base_item_state"
+        android:textColor="@color/myGrayDark"
+        android:textSize="@dimen/des_size"
+        tools:text="Value" />
+
+</RelativeLayout>

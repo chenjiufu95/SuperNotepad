@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topbar_root"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/state_bar_height"
+    android:layout_height="@dimen/my_topbar_height"
+    android:background="@color/White">
+   <!-- android:elevation="@dimen/my_topbar_elevation">-->
+    <!--android:layout_marginBottom="@dimen/my_topbar_elevation">-->
+
+    <am.doit.dohome.MyView.TextView.FocusTextView
+        android:id="@+id/topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/topbar_left"
+        android:layout_toLeftOf="@id/topbar_right2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:text="DoHome"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size_in_topbar"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever" />
+
+    <ImageView
+        android:id="@+id/topbar_left"
+        android:layout_width="@dimen/my_topbar_icon_size"
+        android:layout_height="@dimen/my_topbar_icon_size"
+        android:padding="@dimen/my_topbar_icon_padding"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ui4_topbar_left_white" />
+
+    <ImageView
+        android:id="@+id/topbar_right2"
+        android:layout_width="@dimen/my_topbar_icon_size"
+        android:layout_height="@dimen/my_topbar_icon_size"
+        android:padding="@dimen/my_topbar_icon_padding"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@id/topbar_right"
+        android:src="@drawable/topbar_mesh_white"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/topbar_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="@dimen/title_size"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/topbar_right"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/topbar_right"
+        android:layout_width="@dimen/my_topbar_icon_size"
+        android:layout_height="@dimen/my_topbar_icon_size"
+        android:padding="@dimen/my_topbar_icon_padding"
+        android:src="@drawable/topbar_more_white"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/topbar_decoration"
+        style="@style/topbar_decoration"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

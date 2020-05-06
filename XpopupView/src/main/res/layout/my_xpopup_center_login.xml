@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_for_my_xpopup"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/radius_for_my_xpopup_card"
+    android:padding="0dp"
+    app:cardBackgroundColor="@color/White"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_my_divider">
+
+        <pers.julio.notepad.xpopup.Component.FocusTextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            tools:text="标题"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/myTextColor"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_gravity="center">
+                <!-- android:layout_marginBottom="4dp">-->
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/login_user_icon"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/login_user_name_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:errorEnabled="true"
+                    android:theme="@style/TextInputLayoutWhite">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/login_user_name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-10dp"
+                        android:hint="请输入用户名"
+                        android:textColor="@color/myGrayDark"
+                        android:textColorHint="@color/myGrayDark"
+                        android:textSize="@dimen/title_size"
+                        android:theme="@style/TextInputLayoutWhite"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/login_pswd_icon"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/login_user_pwd_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="true"
+
+                    android:focusableInTouchMode="true"
+                    android:theme="@style/TextInputLayoutWhite"
+
+                    app:errorEnabled="true"
+                    app:passwordToggleDrawable="@drawable/selector_pwd"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/myGrayDark">
+
+                    <!-- <androidx.appcompat.widget.AppCompatEditText-->
+                    <AutoCompleteTextView
+                        android:id="@+id/login_user_pwd_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-12dp"
+                        android:hint="@string/input_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/myGrayDark"
+                        android:textColorHint="@color/myGrayLightBg"
+                        android:textSize="@dimen/title_size"
+                        android:theme="@style/TextInputLayoutWhite" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+            <TextView
+                android:id="@+id/login_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/cancel"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/myGrayDark" />
+            <View
+                android:id="@+id/login_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/myGrayDark" />
+
+            <TextView
+                android:id="@+id/login_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/confirm"
+                android:textColor="@color/myTextColor"
+                android:textSize="@dimen/title_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+

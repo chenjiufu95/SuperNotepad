@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SuperNotepad</string>
+    <string name="load_error">数据加载错误</string>
+</resources>

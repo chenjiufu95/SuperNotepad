@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="260dp"
+    app:cardCornerRadius="10dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/White"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_my_divider">
+
+        <pers.julio.notepad.xpopup.Component.FocusTextView
+            android:id="@+id/list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="标题"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/myTextColor"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever" />
+
+<!--        <com.lxj.xpopup.widget.VerticalRecyclerView-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
+            android:id="@+id/list_recyclerView"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:id="@+id/list_ctrl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+            <TextView
+                android:id="@+id/list_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/cancel"
+                android:textSize="@dimen/title_size"
+                android:textColor="@color/myGrayDark" />
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/myGrayDark" />
+
+            <TextView
+                android:id="@+id/list_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/confirm"
+                android:textColor="@color/myTextColor"
+                android:textSize="@dimen/title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

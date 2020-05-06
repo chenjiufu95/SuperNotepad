@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="特殊组件"
+        android:textSize="25sp"
+        android:textColor="@color/Blue"/>
+
+    <LinearLayout
+        android:id="@+id/otp_color_mode_layout_1"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="@dimen/grid_height"
+        android:layout_margin="10dp">
+
+        <pers.julio.notepad.Component.OtpTouchView
+            android:id="@+id/otp_color_mode_rgb"
+            android:layout_width="@dimen/grid_width"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:layout_height="match_parent" />
+
+        <pers.julio.notepad.Component.OtpTouchView
+            android:id="@+id/otp_color_mode_temp"
+            android:layout_width="@dimen/grid_width"
+            android:clickable="true"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otp_color_mode_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_height"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <pers.julio.notepad.Component.OtpTouchView
+            android:id="@+id/otp_color_mode_read"
+            android:layout_width="@dimen/grid_width"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:layout_height="match_parent" />
+
+        <pers.julio.notepad.Component.OtpTouchView
+            android:id="@+id/otp_color_mode"
+            android:layout_width="@dimen/grid_width"
+            android:clickable="true"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
